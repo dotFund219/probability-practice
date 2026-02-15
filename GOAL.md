@@ -20,7 +20,7 @@ from scipy.stats import norm, bernoulli
 
 # 1️⃣ Gaussian (Normal) Distribution Practice
 
-## 📌 Problem 1: Change Mean and Standard Deviation
+## 📌 Problem 1: Change Mean and Standard Deviation - ✅ 2026-02-15
 
 - Generate a normal distribution with mean = 0 and standard deviation = 1
 - Generate another normal distribution with mean = 10 and standard deviation = 3
