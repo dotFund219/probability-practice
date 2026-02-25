@@ -26,6 +26,26 @@ def problem_01():
     plt.title('normal distribution')
     plt.show()
 
+def plot_theoretical_curve(mu=0, sigma=1):
+    x = np.linspace(-4, 4, 1000)
+    pdf = norm.pdf(x, mu, sigma)
+
+    samples = np.random.normal(mu, sigma, 10000)
+
+    plt.hist(samples, bins=50, density=True, alpha=0.5, histtype='bar')
+    plt.plot(x, pdf, color='red')
+    plt.title('Histogram vs Theoretical PDF')
+    plt.show()
+
+def problem_02():
+    mu = 70
+    sigma = 10
+
+    prob = 1 - norm.cdf(80, mu, sigma)
+    print(prob)
+
 if __name__ == '__main__':
     normal_distribution(mu=0, sigma=1)
     problem_01()
+    plot_theoretical_curve(mu=0, sigma=1)
+    problem_02()

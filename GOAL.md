@@ -30,7 +30,7 @@ from scipy.stats import norm, bernoulli
 
 ---
 
-## 📌 Problem 2: Probability Calculation
+## 📌 Problem 2: Probability Calculation - ✅ 2026-02-25
 
 For exam scores with:
 
