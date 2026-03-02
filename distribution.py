@@ -44,8 +44,27 @@ def problem_02():
     prob = 1 - norm.cdf(80, mu, sigma)
     print(prob)
 
+def problem_03():
+    samples = np.random.normal(70, 10, 1000000)
+
+    n = 0
+    for sample in samples:
+        if sample > 80:
+            n = n + 1
+
+    print(n/1000000 * 100)
+
+def problem_04():
+    samples = np.random.binomial(1, 0.3, 1000000)
+
+    plt.hist(samples, bins=2, density=True, alpha=0.5, histtype='bar')
+    plt.title('Bernoulli distribution')
+    plt.show()
+
 if __name__ == '__main__':
     normal_distribution(mu=0, sigma=1)
     problem_01()
     plot_theoretical_curve(mu=0, sigma=1)
     problem_02()
+    problem_03()
+    problem_04()

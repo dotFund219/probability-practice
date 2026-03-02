@@ -52,7 +52,7 @@ norm.cdf()
 
 --- 
 
-## 📌 Problem 3: Simulation vs Theoretical Comparison
+## 📌 Problem 3: Simulation vs Theoretical Comparison - ✅ 2026-02-26
 
 Generate 1,000,000 random samples:
 ```python
@@ -64,6 +64,9 @@ samples = np.random.normal(70, 10, 1000000)
 - Compare it with the theoretical probability
 
 👉 Develop intuition about convergence and large sample behavior.
+
+norm.cdf result is 15.8655253
+random result is 15.87230001
 
 ---
 
